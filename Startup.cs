@@ -32,6 +32,9 @@ namespace aspcore2webserver_test
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                app.UseDefaultFiles();
+                app.UseStaticFiles();
             }
 
             app.UseMvc();

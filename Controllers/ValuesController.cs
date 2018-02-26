@@ -11,13 +11,9 @@ namespace aspcore2webserver_test.Controllers
     {
         // GET api/values
         [HttpGet]
-        [Produces("text/html")]
-        public ContentResult Get()
+        public IEnumerable<string> Get()
         {
-            return new ContentResult () {
-                Content = "<html><body>Hello World</body></html>",
-                ContentType = "text/html",
-            };
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
