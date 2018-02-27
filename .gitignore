@@ -1,5 +1,2 @@
-bin/Debug/netcoreapp2.0/aspcore2webserver_test.dll
-bin/Debug/netcoreapp2.0/aspcore2webserver_test.pdb
-obj/Debug/netcoreapp2.0/aspcore2webserver_test.dll
-obj/Debug/netcoreapp2.0/aspcore2webserver_test.pdb
-obj/Debug/netcoreapp2.0/aspcore2webserver_test.csproj.FileListAbsolute.txt
+obj/Debug/*
+bin/Debug/*
