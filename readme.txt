@@ -6,3 +6,4 @@
 6- do your stuff
 7- publish a self-contained app with: dotnet publish -r <RID>
 where <RID> is a tag for a target platform (linux, win...) see RIDs at: https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
+8- publish in release: dotnet publish -r <RID> -c Release
