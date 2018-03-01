@@ -34,10 +34,13 @@ namespace aspcore2webserver_test
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
             
-            app.UseMvc();
+            app.UseMvc(routes =>
+                {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                });
         }
     }
 }
