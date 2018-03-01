@@ -35,7 +35,7 @@ namespace aspcore2webserver_test
             }
 
             //app.UseDefaultFiles();
-            //app.UseStaticFiles();
+            app.UseStaticFiles();
             
             app.UseMvc();
         }
