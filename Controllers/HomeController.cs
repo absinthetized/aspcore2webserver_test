@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-public class HomeController : Controller
-{
-  public IActionResult Index() { return View(); }
+namespace aspcore2webserver_test.Controllers {
+    [Route("/")]
+    public class HomeController : Controller
+    {
+        [HttpGet]
+        public IActionResult Index() { return View(); }
+    }
 }

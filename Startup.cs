@@ -37,10 +37,7 @@ namespace aspcore2webserver_test
             //app.UseDefaultFiles();
             //app.UseStaticFiles();
             
-            app.UseMvc(routes =>
-                {
-                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-                });
+            app.UseMvc();
         }
     }
 }
