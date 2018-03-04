@@ -7,3 +7,9 @@
 7- publish a self-contained app with: dotnet publish -r <RID>
 where <RID> is a tag for a target platform (linux, win...) see RIDs at: https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
 8- publish in release: dotnet publish -r <RID> -c Release
+
+notes:
+a) if static files are enabled -app.UseStaticFiles()- but no default file is requested  -app.UseDefaultFiles()-,
+templates have precedence
+b) if both MCV and Razor Pages are active MCV is the default.
+c) so precedence is: MCV -> Razor Pages -> static.
